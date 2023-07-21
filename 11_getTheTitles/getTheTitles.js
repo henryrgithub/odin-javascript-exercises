@@ -1,4 +1,12 @@
-const getTheTitles = function() {
+const getTheTitles = function(books) {
+    const retArr =  books.reduce(
+        (accum,curr) => {
+            accum.push(curr.title);
+            return accum;
+        },
+        []
+    );
+    return retArr;
 
 };
 
